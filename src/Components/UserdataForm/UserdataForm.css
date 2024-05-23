@@ -1,29 +1,26 @@
 /* UserDataForm.css */
 
-
-
-
-.form-container input,.form-container textarea {
-    width: 100%;
-    padding: 8px;
-    margin-bottom: 5px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    background-color: rgb(30,30,30);
-   
+.form-container input,
+.form-container textarea {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 5px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: rgb(30, 30, 30);
 }
 
 .form-container button {
-    padding: 8px 16px;
-    background-color: #007bff;
-    color: #fff;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 8px 16px;
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .form-container button:hover {
-    background-color: #0056b3;
+  background-color: #0056b3;
 }
 
 /* new style */
@@ -31,140 +28,138 @@
 
 /* Main form container */
 .form-container {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    height: 400px;
-    width: 100%;
-    width: 700px;
-    margin: 0 auto;
-    background-color: rgb(30,30,30); /* Dark mode background */
-    color: #ffffff; /* Light text for dark mode */
-    border-radius: 20px;
-    padding: 20px;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    /* margin:20px 10px; */
-    border: 1px solid #ccc;
-  }
-  
-  /* Form heading */
-  .form-container h1 {
-    font-size: 2em;
-    margin-bottom: 10px;
-  }
-  
-  /* Label styles */
-  .form-container label {
-    width: 100%;
-    margin-bottom: 15px;
-    font-size: 1em;
-    display: flex;
-    /* flex-direction: column; */
-  }
-  
-  /* Input styles */
-  .form-container input {
-    padding: 10px;
-    font-size: 1em;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    margin-top: 5px;
-    background-color: rgb(30,30,30); /* Darker input background */
-    color: #fff; /* Light text for inputs */
-  }
-  
-  /* Button styles */
-  .form-container button {
-    padding: 10px 20px;
-    font-size: 1em;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-  }
-  
-  .form-container button[type="button"] {
-    background-color: #03dac5; /* Different color for generate button */
-    color: #ffffff;
-  }
-  
-  .form-container button[type="button"]:hover {
-    background-color: #018786; /* Darker shade on hover */
-  }
-  
-  .form-container button[type="submit"] {
-    background-color: rgb(98, 0, 234); /* Button color */
-    color: #ffffff;
-    margin-top: 10px;
-  }
-  
-  .form-container button[type="submit"]:hover {
-    background-color: #3700b3; /* Darker shade on hover */
-  }
-  
-  /* User ID container */
-  .useId-container {
-    /* margin-bottom: 15px; */
-    font-size: 1.2em;
-    font-weight: bold;
-  }
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width: 100%;
+  width: 700px;
+  margin: 0 auto;
+  background-color: rgb(30, 30, 30); /* Dark mode background */
+  color: #ffffff; /* Light text for dark mode */
+  border-radius: 20px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  /* margin:20px 10px; */
+  border: 1px solid #ccc;
+}
 
-  .form-label-data,.first-form-data{
-    display:flex;
-    flex-direction: column;
-  }
-  .second-form-data{
-    display: flex;
-    gap:20px;
-    /* flex-direction: column; */
-  }
-  #generate-btn{
-    background-color: rgb(130,217,8);
-    color:black;
-    width:150px;
-    display: inline;
-    margin:0;
-    transition: all 0.5s ease;
-  }
-  #generate-btn:hover{
-    transform: translateY(-3px);
-  }
-  .useId-container{
-     /* border:2px solid white; */
-    width:400px; 
-    display: inline;
-  }
-  .generate-lable{
-    display:flex;
-    width:550px;
-   height:40px;
-    border-radius:5px;
-    gap:20px;
-    margin-bottom: 15px;
-  }
-  #save-btn{
-    width: 550px;
-  }
-  textarea{
-    color:white;
-  }
-  .first-form-data{
-    width:550px;
-  }
-  .useId-container{
-    border:1px solid rgb(190, 190, 190);
-    border-radius:5px;
-    display:flex;
-    align-items:center;
-    font-size: 16px;
-    padding:10px;
-  }
-  #user-id{
-    color:rgb(130,217,8);
-    font-size:16px;
-    margin-right:10px;
-  }
-  
-  
-  
+/* Form heading */
+.form-container h1 {
+  font-size: 2em;
+  margin-bottom: 10px;
+}
+
+/* Label styles */
+.form-container label {
+  width: 100%;
+  margin-bottom: 15px;
+  font-size: 1em;
+  display: flex;
+  /* flex-direction: column; */
+}
+
+/* Input styles */
+.form-container input {
+  padding: 10px;
+  font-size: 1em;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  margin-top: 5px;
+  background-color: rgb(30, 30, 30); /* Darker input background */
+  color: #fff; /* Light text for inputs */
+}
+
+/* Button styles */
+.form-container button {
+  padding: 10px 20px;
+  font-size: 1em;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.form-container button[type="button"] {
+  background-color: #03dac5; /* Different color for generate button */
+  color: #ffffff;
+}
+
+.form-container button[type="button"]:hover {
+  background-color: #018786; /* Darker shade on hover */
+}
+
+.form-container button[type="submit"] {
+  background-color: rgb(98, 0, 234); /* Button color */
+  color: #ffffff;
+  margin-top: 10px;
+}
+
+.form-container button[type="submit"]:hover {
+  background-color: #3700b3; /* Darker shade on hover */
+}
+
+/* User ID container */
+.useId-container {
+  /* margin-bottom: 15px; */
+  font-size: 1.2em;
+  font-weight: bold;
+}
+
+.form-label-data,
+.first-form-data {
+  display: flex;
+  flex-direction: column;
+}
+.second-form-data {
+  display: flex;
+  gap: 20px;
+  /* flex-direction: column; */
+}
+#generate-btn {
+  background-color: rgb(130, 217, 8);
+  color: black;
+  width: 150px;
+  display: inline;
+  margin: 0;
+  transition: all 0.5s ease;
+}
+#generate-btn:hover {
+  transform: translateY(-3px);
+}
+.useId-container {
+  /* border:2px solid white; */
+  width: 400px;
+  display: inline;
+}
+.generate-lable {
+  display: flex;
+  width: 550px;
+  height: 40px;
+  border-radius: 5px;
+  gap: 20px;
+  margin-bottom: 15px;
+}
+#save-btn {
+  width: 550px;
+}
+textarea {
+  color: white;
+}
+.first-form-data {
+  width: 550px;
+}
+.useId-container {
+  border: 1px solid rgb(190, 190, 190);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+  padding: 10px;
+}
+#user-id {
+  color: rgb(130, 217, 8);
+  font-size: 16px;
+  margin-right: 10px;
+}

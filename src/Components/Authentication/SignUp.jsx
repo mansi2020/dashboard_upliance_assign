@@ -33,44 +33,40 @@ const SignUp = () => {
       );
       authctx.setCurrentUser(currentUser);
       navigate("/homepage");
-    //   alert("Registration Successful,Please Login to continue");
+      //   alert("Registration Successful,Please Login to continue");
     } catch (err) {
-        alert(`${err}`);
+      alert(`${err}`);
       console.log(err);
     }
   };
 
   return (
     <div className="signup-main-container">
-
-
-    <div className="register-container">
-      <h1>Sign Up</h1>
-      {error && <div>Password and Confirm Password do not match</div>}
-      <br />
-      <form action="" onSubmit={handleSubmit}>
-        <label>Email</label>
+      <div className="register-container">
+        <h1>Sign Up</h1>
+        {error && <div>Password and Confirm Password do not match</div>}
         <br />
-        <input type="email" ref={emialRef} required />
-        <br />
-        <label>Password</label>
-        <br />
-        <input type="password" ref={passwordRef} required />
-        <br />
-        <label htmlFor="">Password Confirmation</label>
-        <br />
-        <input type="password" ref={passwordConfirmRef} required />
-        <br />
-        <br />
-        <button className="signupBtn">Sign Up</button>
-      </form>
-      <p style={{ marginTop: "20px" }}>
-        Alerady have an Account? <Link to="/login">Log In</Link>{" "}
-      </p>
+        <form action="" onSubmit={handleSubmit}>
+          <label>Email</label>
+          <br />
+          <input type="email" ref={emialRef} required />
+          <br />
+          <label>Password</label>
+          <br />
+          <input type="password" ref={passwordRef} required />
+          <br />
+          <label htmlFor="">Password Confirmation</label>
+          <br />
+          <input type="password" ref={passwordConfirmRef} required />
+          <br />
+          <br />
+          <button className="signupBtn">Sign Up</button>
+        </form>
+        <p style={{ marginTop: "20px" }}>
+          Alerady have an Account? <Link to="/login">Log In</Link>{" "}
+        </p>
+      </div>
     </div>
-    </div>
-
-
   );
 };
 

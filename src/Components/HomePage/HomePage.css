@@ -1,16 +1,16 @@
-.homepage-container{
-    height:100vh;
-    width:100vw;
-    z-index:-1;
-    background-color: black;
+.homepage-container {
+  height: 100vh;
+  width: 100vw;
+  z-index: -1;
+  background-color: black;
 }
-.home-page-sub-container{
-    display:flex;
-    flex-direction: column;
+.home-page-sub-container {
+  display: flex;
+  flex-direction: column;
 }
-.counter-form-container{
-    display:flex;
-    justify-content: center;
-    padding:20px;
-    gap:20px;
+.counter-form-container {
+  display: flex;
+  justify-content: center;
+  padding: 20px;
+  gap: 20px;
 }

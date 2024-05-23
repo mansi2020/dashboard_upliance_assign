@@ -18,9 +18,10 @@ function App() {
     {
       path: "/login",
       element: <LogIn />,
-    },{
+    },
+    {
       path: "/homepage",
-      element: <HomePage/>,
+      element: <HomePage />,
     },
   ]);
 
