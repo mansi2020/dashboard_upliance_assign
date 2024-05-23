@@ -1,5 +1,6 @@
 import { createContext, useState } from "react";
 
+
 // create common context
 const UserContext = createContext({});
 

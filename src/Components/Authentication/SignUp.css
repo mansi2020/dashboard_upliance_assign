@@ -1,0 +1,31 @@
+.register-container {
+    width: 500px;
+    padding: 20px;
+    border: 2px solid black;
+    text-align: center;
+  }
+  
+  .register-container input {
+    width: 100%;
+    padding: 10px 20px;
+    margin: 10px 0;
+  }
+  
+  .signupBtn {
+    width: 100%;
+    background-color: rgba(0, 140, 255, 0.873);
+    color: white;
+    padding: 15px 0;
+    border: none;
+  }
+  .loginBtn {
+    width: 100%;
+    color: white;
+    padding: 15px 0;
+    border: none;
+  }
+  
+  .signupBtn:hover,
+  .loginBtn:hover {
+    box-shadow: 2px 2px 2px grey;
+  }
