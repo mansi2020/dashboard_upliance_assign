@@ -100,31 +100,42 @@ function UserdataForm() {
     return (
         <div>
             <form onSubmit={handleSubmit} className="form-container">
-                <label>
-                    User ID: {formData.userId}
-                    <button type="button" onClick={handleGenerateUserId}>Generate</button>
-                </label>
-                <label>
-                    Name:
-                    <input type="text" name="name" value={formData.name} onChange={handleChange} />
-                </label>
-                
-                <label>
-                    Address:
-                    <input type="text" name="address" value={formData.address} onChange={handleChange} />
+                <h1>UserData Form</h1>
+                <div className="form-label-data">
+
+                <div className="first-form-data">
+                <label className='name-label'>
+                    
+                    <input type="text" name="name" value={formData.name} placeholder='Name' onChange={handleChange} />
                 </label>
                 
-                <label>
-                    Email:
-                    <input type="email" name="email" value={formData.email} onChange={handleChange} />
+                <label className='formData-label'>
+                    
+                    <textarea type="text" name="address" value={formData.address} placeholder='Address' onChange={handleChange} />
+                </label>
+                </div>
+                <div className="second-form-data">
+                <label className='email-label'>
+                    
+                    <input type="email" name="email" value={formData.email} placeholder='Email' onChange={handleChange} />
                 </label>
                 
-                <label>
-                    Phone:
-                    <input type="tel" name="phone" value={formData.phone} onChange={handleChange} />
+                <label className='phone-lable'>
+                   
+                    <input type="tel" name="phone" value={formData.phone} placeholder='Phone No.' onChange={handleChange} />
                 </label>
+                </div>
+                </div>
                 
-                <button type="submit" disabled={isSaveDisabled}>Save</button>
+                
+                
+                <div className='generate-lable'>
+                    <div className='useId-container'><span id="user-id">User ID:</span>{formData.userId}</div>
+                    <button type="button" onClick={handleGenerateUserId} id="generate-btn">Generate</button>
+                    
+                </div>
+                
+                <button type="submit" disabled={isSaveDisabled} id='save-btn'>Save</button>
             </form>
             <ToastContainer />
         </div>

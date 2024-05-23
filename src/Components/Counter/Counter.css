@@ -15,7 +15,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    background: linear-gradient(0deg, rgba(0, 128, 255, 1) 0%, rgba(0, 128, 255, 0.6) 50%, rgba(0, 128, 255, 0) 100%);
+    background: linear-gradient(0deg, rgb(98, 0, 234,1) 0%, rgb(98, 0, 234,0.6) 50%, rgba(0, 128, 255, 0) 100%);
   }
   
   h1 {
@@ -26,4 +26,58 @@
   button {
     margin: 5px;
   }
+  /* Counter.css */
+
+.counter-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 400px;
+  width:500px;
+  background-color: rgb(30,30,30);
+  color: #ffffff;
+  /* margin:20px; */
+  border-radius: 20px;
+}
+
+.counter-container h1 {
+  font-size: 3em;
+  margin-bottom: 20px;
+  color: #e0e0e0;
+}
+
+.counter-container div {
+  display: flex;
+  gap: 10px;
+}
+
+.counter-container button {
+  background-color: #6200ea;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  font-size: 1em;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.5s ease;
+}
+.reset-btn{
+  background-color: rgb(130, 217, 8) !important;
+  color:black !important;
+  cursor: pointer;
+  transition: all 0.5s ease;
+  border:none;
+}
+
+.counter-container button:hover {
+  transform: translateY(-3px);
+}
+
+
+
+.counter-container .error {
+  color: #ff4c4c;
+}
+
   

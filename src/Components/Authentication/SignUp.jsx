@@ -35,11 +35,15 @@ const SignUp = () => {
       navigate("/homepage");
     //   alert("Registration Successful,Please Login to continue");
     } catch (err) {
+        alert(`${err}`);
       console.log(err);
     }
   };
 
   return (
+    <div className="signup-main-container">
+
+
     <div className="register-container">
       <h1>Sign Up</h1>
       {error && <div>Password and Confirm Password do not match</div>}
@@ -64,6 +68,9 @@ const SignUp = () => {
         Alerady have an Account? <Link to="/login">Log In</Link>{" "}
       </p>
     </div>
+    </div>
+
+
   );
 };
 

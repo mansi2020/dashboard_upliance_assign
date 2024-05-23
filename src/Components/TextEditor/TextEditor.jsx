@@ -2,6 +2,7 @@ import React, { useState, useEffect,useContext } from 'react';
 import ReactQuill from 'react-quill';
 import 'react-quill/dist/quill.snow.css';
 import { UserContext } from '../../Context/Context';
+import "./TextEditor.css"
 
 function TextEditor() {
      // context data
@@ -45,14 +46,15 @@ function TextEditor() {
     }, [data]); // Update when formData changes
 
     return (
-        <div style={{height:"400px"}}>
+        <div className='text-editor-container'>
             <ReactQuill
                 theme="snow"
                 value={editorHtml}
                 onChange={handleChange}
                 modules={modules}
                 formats={formats}
-                style={{ height: '150px' }}
+                className='text-editor'
+                
             />
         </div>
     );

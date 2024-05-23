@@ -1,31 +1,102 @@
-.register-container {
-    width: 500px;
-    padding: 20px;
-    border: 2px solid black;
+/* SignUp.css */
+
+/* Main container for the signup page */
+.signup-main-container,.login-main-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    width: 100vw;
+    background-color: #121212; /* Dark mode background */
+    color: #ffffff; /* Light text for dark mode */
+  }
+  
+  /* Container for the registration form */
+  .register-container {
+    background-color: #1e1e1e; /* Slightly lighter background for the form */
+    padding: 40px;
+    /* border-radius: 10px; */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
     text-align: center;
+    width: 100%;
+    /* max-width: 400px; */
   }
   
-  .register-container input {
-    width: 100%;
+  /* Headings */
+  .register-container h1 {
+    margin-bottom: 20px;
+    font-size: 2em;
+    color: #e0e0e0;
+  }
+  
+  /* Error message */
+  .register-container div {
+    color: #ff4c4c;
+  }
+  
+  /* Labels */
+  .register-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+    width: 500px;
+    margin: auto;
+  }
+  
+  /* Input fields */
+  .register-container input[type="email"],
+  .register-container input[type="password"] {
+    width: 500px;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #333;
+    border-radius: 5px;
+    /* background-color: #2e2e2e; */
+    background-color: light-dark(rgb(232, 240, 254), rgba(70, 90, 126, 0.4)) !important;
+    /* color: #ffffff; */
+    outline: none;
+  }
+  
+  .register-container input[type="email"]::placeholder,
+  .register-container input[type="password"]::placeholder {
+    color: #b0b0b0;
+  }
+  
+  /* Button */
+  .signupBtn,.loginBtn {
+    background-color: #6200ea;
+    color: #ffffff;
+    border: none;
     padding: 10px 20px;
-    margin: 10px 0;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
   }
   
-  .signupBtn {
-    width: 100%;
-    background-color: rgba(0, 140, 255, 0.873);
-    color: white;
-    padding: 15px 0;
-    border: none;
-  }
-  .loginBtn {
-    width: 100%;
-    color: white;
-    padding: 15px 0;
-    border: none;
+  .signupBtn:hover,.loginBtn:hover {
+    transform: translateY(-3px);
   }
   
-  .signupBtn:hover,
-  .loginBtn:hover {
-    box-shadow: 2px 2px 2px grey;
+  /* Link */
+  .register-container p a {
+    color: #bb86fc;
+    text-decoration: none;
   }
+  
+  .register-container p a:hover {
+    text-decoration: underline;
+  }
+  
+  /* Spacing adjustments */
+  form {
+    margin-top: 20px;
+  }
+  
+  form label {
+    text-align: left;
+  }
+  
+  form input {
+    margin-bottom: 15px;
+  }
+  
