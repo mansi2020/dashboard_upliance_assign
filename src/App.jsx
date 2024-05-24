@@ -7,6 +7,7 @@ import { ContextProvider } from "./Context/Context";
 import firebase from "./firebase";
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import AuthProvider from "./Context/AuthProvider";
+import Counter from "./Components/Counter/Counter"
 
 function App() {
   // router

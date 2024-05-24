@@ -2,6 +2,8 @@ import React, { useState, useEffect, useContext } from "react";
 import ReactQuill from "react-quill";
 import "react-quill/dist/quill.snow.css";
 import { UserContext } from "../../Context/Context";
+import { toast, ToastContainer } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 import "./TextEditor.css";
 
 function TextEditor() {
@@ -57,6 +59,22 @@ function TextEditor() {
     console.log(data);
   }, [data]); // Update when formData changes
 
+  // handle save data
+  const handleSave = () => {
+    const savedData = JSON.parse(localStorage.getItem("editorData")) || [];
+    savedData.push({ html: editorHtml });
+    localStorage.setItem("editorData", JSON.stringify(savedData));
+    toast.success('Data saved successfully!', {
+      position: "top-right",
+      autoClose: 3000,
+      hideProgressBar: false,
+      closeOnClick: true,
+      pauseOnHover: true,
+      draggable: true,
+      progress: undefined,
+    });
+  };
+
   return (
     <div className="text-editor-container">
       <ReactQuill
@@ -67,6 +85,8 @@ function TextEditor() {
         formats={formats}
         className="text-editor"
       />
+      <button onClick={handleSave} id="text-aditor-btn">Save</button>
+      <ToastContainer />
     </div>
   );
 }
