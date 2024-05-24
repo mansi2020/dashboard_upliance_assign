@@ -3,24 +3,28 @@
 This is a React-based web application that includes a Counter component, User Data Form, Rich Text Editors, and additional features such as user authentication and dashboard visualization. The application uses Context API for state management, CSS for styling, routing, and various components.
 
 ## Hosted Link
-[https://your-dashboard-app.vercel.app/](https://your-dashboard-app.vercel.app/)
+https://dashboard-upliance-assign.vercel.app/homepage
 
 ## User Interactions Guide
 
 ### Common Buttons
 - **Generate User ID button**: Users can generate a unique User ID in the User Data Form by clicking this button.
 - **Save button**: Users can save their input data to local storage by clicking this button.
-- **Increase button**: Users can increase counter by clicking this button.
-- **Decrease button**: Users can decrease counter by clicking this button.
+- **Increment button**: Users can increase counter by clicking this button.
+- **Decrement button**: Users can decrease counter by clicking this button.
 - **Reset button**: Users can reset counter by clicking this button.
 
 ### Home Page
+![dashboardpage](https://github.com/mansi2020/dashboard_upliance_assign/assets/57188328/94bc6be4-c493-4235-b331-4b580835129d)
 
 
 ### Authentication Page
+![signup](https://github.com/mansi2020/dashboard_upliance_assign/assets/57188328/d0971b1c-cb8c-443e-ae9d-366d84497e9a)
+
+![login](https://github.com/mansi2020/dashboard_upliance_assign/assets/57188328/66b2c090-b677-4c22-a23e-c4bb591a05dc)
 
 - Users can sign in or sign up using Google authentication.
-- Provides secure routes for authenticated users and public routes for others.
+
 
 
 ## Features
