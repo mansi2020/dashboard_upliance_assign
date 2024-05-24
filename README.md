@@ -3,7 +3,7 @@
 This is a React-based web application that includes a Counter component, User Data Form, Rich Text Editors, and additional features such as user authentication and dashboard visualization. The application uses Context API for state management, CSS for styling, routing, and various components.
 
 ## Hosted Link
-https://dashboard-upliance-assign.vercel.app/homepage
+https://dashboard-upliance-assign.vercel.app/
 
 ## User Interactions Guide
 
