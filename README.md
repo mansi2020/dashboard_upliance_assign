@@ -15,7 +15,8 @@ https://dashboard-upliance-assign.vercel.app/
 - **Reset button**: Users can reset counter by clicking this button.
 
 ### Home Page
-![dashboardpage](https://github.com/mansi2020/dashboard_upliance_assign/assets/57188328/94bc6be4-c493-4235-b331-4b580835129d)
+![image](https://github.com/mansi2020/dashboard_upliance_assign/assets/57188328/5800ad39-a4dd-4d3a-83ee-df28fea1f27a)
+
 
 
 ### Authentication Page
